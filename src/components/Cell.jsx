@@ -1,7 +1,7 @@
-function Cell({ cell, handleClick }) {
+function Cell({ cell, index, handleClick }) {
   return (
-    <div className="cell" onClick={() => handleClick(cell)}>
-      {cell.content}
+    <div className="cell" onClick={() => handleClick(cell, index)}>
+      {cell}
     </div>
   );
 }
