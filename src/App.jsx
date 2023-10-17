@@ -51,11 +51,11 @@ function App() {
 
     // Détermine le statut : nom du gagnant, égalité, ou prochain joueur
     return winner ? (
-      <div>Winner : {otherPlayer()}</div>
+      <div>winner : {otherPlayer()}</div>
     ) : !board.includes(null) ? (
-      <div>Draw</div>
+      <div>draw</div>
     ) : (
-      <div>Current player : {currentPlayer()}</div>
+      <div>current player : {currentPlayer()}</div>
     );
   };
 
